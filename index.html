@@ -1,1 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service – WebSync for WA</title>
+  <meta name="description" content="Terms of Service for WebSync for WA – Android app by Raza's Dev Studio. Read our terms before using the application." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Terms of Service – WebSync for WA" />
+  <meta property="og:description" content="Please read these Terms of Service carefully before using WebSync for WA." />
+  <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    :root {
+      --bg:         #f6f8fb;
+      --surface:    #ffffff;
+      --surface2:   #f0f4f8;
+      --border:     #e2e8f0;
+      --primary:    #2d3a8c;
+      --primary-lt: #eef0fb;
+      --accent:     #4f5fd4;
+      --text:       #1a202c;
+      --text-2:     #4a5568;
+      --text-3:     #718096;
+      --shadow:     0 2px 16px rgba(0,0,0,.07);
+      --shadow-sm:  0 1px 4px rgba(0,0,0,.06);
+      --radius:     16px;
+      --radius-sm:  10px;
+      --header-h:   64px;
+      --font:       'Inter', system-ui, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:         #0f1117;
+        --surface:    #1a1f2e;
+        --surface2:   #242938;
+        --border:     #2d3548;
+        --primary:    #7b8ff7;
+        --primary-lt: #1a1f3a;
+        --accent:     #9ba8fa;
+        --text:       #edf2f7;
+        --text-2:     #a0aec0;
+        --text-3:     #718096;
+        --shadow:     0 2px 16px rgba(0,0,0,.3);
+      }
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--header-h);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 12px;
+    }
+    .header-logo {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .header-logo svg { width: 20px; height: 20px; fill: #fff; }
+    .header-title { font-size: 1rem; font-weight: 700; letter-spacing: -.3px; }
+    .header-badge {
+      margin-left: auto;
+      font-size: .7rem;
+      font-weight: 600;
+      background: var(--primary-lt);
+      color: var(--primary);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      border-radius: var(--radius);
+      padding: 48px 36px;
+      color: #fff;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 200px; height: 200px;
+      background: rgba(255,255,255,.07);
+      border-radius: 50%;
+    }
+    .hero-icon {
+      width: 56px; height: 56px;
+      background: rgba(255,255,255,.2);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .hero-icon svg { width: 30px; height: 30px; fill: #fff; }
+    .hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 8px; }
+    .hero p { font-size: .95rem; opacity: .85; max-width: 540px; }
+    .hero-meta { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-chip {
+      background: rgba(255,255,255,.18);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+
+    /* Disclaimer banner */
+    .disclaimer-banner {
+      background: linear-gradient(135deg, #fff3cd, #fef0c7);
+      border: 1px solid #f6c935;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    @media (prefers-color-scheme: dark) {
+      .disclaimer-banner {
+        background: #2a2515;
+        border-color: #4a3c00;
+      }
+    }
+    .disclaimer-banner svg { width: 24px; height: 24px; fill: #d97706; flex-shrink: 0; margin-top: 2px; }
+    .disclaimer-banner strong { color: #92400e; display: block; margin-bottom: 4px; font-size: .95rem; }
+    @media (prefers-color-scheme: dark) {
+      .disclaimer-banner strong { color: #fbbf24; }
+    }
+    .disclaimer-banner p { color: var(--text-2); font-size: .875rem; margin: 0; }
+
+    /* TOC */
+    .toc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .toc-card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 6px;
+    }
+    .toc-link {
+      color: var(--text-2);
+      text-decoration: none;
+      font-size: .875rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: flex; align-items: center; gap: 6px;
+      transition: background .15s, color .15s;
+    }
+    .toc-link:hover { background: var(--primary-lt); color: var(--primary); }
+    .toc-num {
+      width: 22px; height: 22px;
+      background: var(--surface2);
+      border-radius: 50%;
+      font-size: .7rem;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    /* Section Cards */
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      scroll-margin-top: calc(var(--header-h) + 16px);
+    }
+    .section-header {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 20px; padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--primary-lt);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-icon svg { width: 22px; height: 22px; fill: var(--primary); }
+    .section-card h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: -.2px; }
+    .section-num {
+      font-size: .7rem; font-weight: 700;
+      background: var(--primary-lt); color: var(--primary);
+      padding: 2px 8px; border-radius: 12px; margin-left: 4px;
+    }
+
+    p { color: var(--text-2); margin-bottom: 14px; font-size: .95rem; }
+    p:last-child { margin-bottom: 0; }
+
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+    .check-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      color: var(--text-2); font-size: .925rem;
+    }
+    .check-list li::before {
+      content: '✓';
+      width: 20px; height: 20px;
+      background: var(--primary-lt); color: var(--primary);
+      border-radius: 50%; font-size: .7rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .cross-list li::before { content: '✕'; background: #fde8e8; color: #c0392b; }
+
+    .highlight-box {
+      border-left: 4px solid var(--primary);
+      background: var(--primary-lt);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      color: var(--text);
+      font-size: .9rem;
+    }
+
+    .rule-card {
+      background: var(--surface2);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin-bottom: 10px;
+    }
+    .rule-card strong { font-size: .925rem; color: var(--text); display: block; margin-bottom: 4px; }
+    .rule-card span { font-size: .85rem; color: var(--text-2); }
+
+    .contact-card {
+      background: linear-gradient(135deg, var(--primary-lt), var(--surface2));
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      display: flex; gap: 14px; align-items: center;
+      margin-top: 12px;
+    }
+    .contact-card a { color: var(--primary); font-weight: 600; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 40px 20px;
+      border-top: 1px solid var(--border);
+      color: var(--text-3); font-size: .82rem;
+    }
+    footer .footer-logo {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 12px;
+    }
+    footer .footer-logo svg { width: 22px; height: 22px; fill: #fff; }
+    footer .footer-app { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    footer .footer-links { display: flex; justify-content: center; gap: 20px; margin: 12px 0; flex-wrap: wrap; }
+    footer .footer-links a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    footer .footer-links a:hover { text-decoration: underline; }
+
+    #back-top {
+      position: fixed; bottom: 28px; right: 24px;
+      width: 46px; height: 46px;
+      background: var(--primary); color: #fff;
+      border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(45,58,140,.4);
+      opacity: 0; pointer-events: none;
+      transition: opacity .25s, transform .25s;
+      transform: translateY(8px);
+    }
+    #back-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    #back-top:hover { transform: translateY(-2px); }
+    #back-top svg { width: 20px; height: 20px; fill: #fff; }
+
+    @media (max-width: 600px) {
+      .container { padding: 24px 14px 60px; }
+      .hero { padding: 32px 22px; }
+      .section-card { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-logo">
+    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+  </div>
+  <span class="header-title">WebSync for WA</span>
+  <span class="header-badge">Terms of Service</span>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15.01l1.41 1.41L11 14.84V19h2v-4.16l1.59 1.59L16 15.01 12.01 11 8 15.01z"/></svg>
+      </div>
+      <h1>Terms of Service</h1>
+      <p>Please read these Terms carefully before using WebSync for WA. By using the app, you agree to these Terms. If you do not agree, please do not use the application.</p>
+      <div class="hero-meta">
+        <span class="hero-chip">📅 Last Updated: July 2025</span>
+        <span class="hero-chip">📱 Android</span>
+        <span class="hero-chip">⚖️ Binding Agreement</span>
+      </div>
+    </div>
+
+    <!-- WhatsApp Disclaimer Banner -->
+    <div class="disclaimer-banner">
+      <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+      <div>
+        <strong>Important Disclaimer</strong>
+        <p>WebSync for WA is an <strong>independent, unofficial</strong> utility application. It is <strong>not affiliated with, endorsed by, sponsored by, or associated with WhatsApp LLC or Meta Platforms, Inc.</strong> in any way. WhatsApp® and related marks are trademarks of their respective owners.</p>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc-card">
+      <h2>
+        <svg width="16" height="16" viewBox="0 0 24 24" style="fill:var(--primary)"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+        Table of Contents
+      </h2>
+      <div class="toc-grid">
+        <a href="#acceptance"     class="toc-link"><span class="toc-num">1</span>Acceptance of Terms</a>
+        <a href="#description"    class="toc-link"><span class="toc-num">2</span>Description of Service</a>
+        <a href="#responsibilities" class="toc-link"><span class="toc-num">3</span>User Responsibilities</a>
+        <a href="#acceptable-use" class="toc-link"><span class="toc-num">4</span>Acceptable Use</a>
+        <a href="#prohibited"     class="toc-link"><span class="toc-num">5</span>Prohibited Activities</a>
+        <a href="#whatsapp"       class="toc-link"><span class="toc-num">6</span>WhatsApp Disclaimer</a>
+        <a href="#ip"             class="toc-link"><span class="toc-num">7</span>Intellectual Property</a>
+        <a href="#third-party"    class="toc-link"><span class="toc-num">8</span>Third-Party Services</a>
+        <a href="#liability"      class="toc-link"><span class="toc-num">9</span>Limitation of Liability</a>
+        <a href="#warranties"     class="toc-link"><span class="toc-num">10</span>Disclaimer of Warranties</a>
+        <a href="#availability"   class="toc-link"><span class="toc-num">11</span>Service Availability</a>
+        <a href="#updates"        class="toc-link"><span class="toc-num">12</span>Updates & Changes</a>
+        <a href="#termination"    class="toc-link"><span class="toc-num">13</span>Termination</a>
+        <a href="#governing-law"  class="toc-link"><span class="toc-num">14</span>Governing Law</a>
+        <a href="#contact-tos"    class="toc-link"><span class="toc-num">15</span>Contact Us</a>
+      </div>
+    </div>
+
+    <!-- 1. Acceptance -->
+    <div class="section-card" id="acceptance">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div><h2>Acceptance of Terms <span class="section-num">01</span></h2></div>
+      </div>
+      <p>By downloading, installing, or using <strong>WebSync for WA</strong> ("the App"), you agree to be bound by these Terms of Service ("Terms"). These Terms form a legally binding agreement between you and <strong>Raza's Dev Studio</strong> ("we", "us", "our").</p>
+      <p>If you are using the App on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
+      <div class="highlight-box">
+        If you do not agree to any part of these Terms, you must immediately stop using the application and uninstall it from your device.
+      </div>
+    </div>
+
+    <!-- 2. Description -->
+    <div class="section-card" id="description">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 6.5C21 4.57 18.68 3 15.82 3c-.95 0-1.83.19-2.57.5H6C4.34 3.5 3 4.84 3 6.5v11c0 1.65 1.34 3 3 3h12c1.65 0 3-1.35 3-3v-11zm-2 11c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-11c0-.55.45-1 1-1h5.81C11.3 5.88 11 6.18 11 6.5c0 .83 2.14 1.5 4.81 1.5 1.19 0 2.24-.19 3-.49V17.5z"/></svg>
+        </div>
+        <div><h2>Description of Service <span class="section-num">02</span></h2></div>
+      </div>
+      <p>WebSync for WA is a multi-feature Android productivity application that provides the following tools:</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:14px">
+        <div class="rule-card"><strong>🌐 WhatsApp Web</strong><span>Full WhatsApp Web experience in a native app shell</span></div>
+        <div class="rule-card"><strong>💬 Direct Chat</strong><span>Start a WhatsApp chat without saving a contact</span></div>
+        <div class="rule-card"><strong>📷 QR Scanner</strong><span>Scan any QR code with your camera</span></div>
+        <div class="rule-card"><strong>📊 QR Generator</strong><span>Generate QR codes from text or URLs</span></div>
+        <div class="rule-card"><strong>✨ Stylish Text</strong><span>Convert text to stylish Unicode fonts</span></div>
+        <div class="rule-card"><strong>🔁 Text Repeater</strong><span>Repeat text multiple times automatically</span></div>
+        <div class="rule-card"><strong>💾 Status Saver</strong><span>View and save WhatsApp statuses locally</span></div>
+        <div class="rule-card"><strong>📁 File Manager</strong><span>Browse and manage files on your device</span></div>
+      </div>
+      <p style="margin-top:16px">The App is provided as a utility tool. We do not guarantee continuous, uninterrupted access to any feature, particularly features that depend on WhatsApp Web's availability.</p>
+    </div>
+
+    <!-- 3. User Responsibilities -->
+    <div class="section-card" id="responsibilities">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        </div>
+        <div><h2>User Responsibilities <span class="section-num">03</span></h2></div>
+      </div>
+      <p>By using WebSync for WA, you agree to:</p>
+      <ul class="check-list">
+        <li>Use the App only for lawful purposes and in accordance with these Terms.</li>
+        <li>Comply with <strong>WhatsApp's Terms of Service</strong> when using the WhatsApp Web feature. You are solely responsible for your compliance with WhatsApp's policies.</li>
+        <li>Be solely responsible for all content you generate, send, download, share, or save through the application.</li>
+        <li>Maintain the security of your WhatsApp account and not share your session with unauthorized parties.</li>
+        <li>Keep the App updated to the latest version to ensure you receive security fixes and improvements.</li>
+        <li>Use the Status Saver and File Manager features responsibly and only for files you have the right to access.</li>
+        <li>Be at least 13 years of age, or the minimum age required in your jurisdiction to use such services.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Acceptable Use -->
+    <div class="section-card" id="acceptable-use">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <div><h2>Acceptable Use <span class="section-num">04</span></h2></div>
+      </div>
+      <p>WebSync for WA is designed for personal, non-commercial use. The following uses are explicitly permitted:</p>
+      <ul class="check-list">
+        <li>Using WhatsApp Web to communicate with your own contacts.</li>
+        <li>Scanning QR codes for personal informational purposes.</li>
+        <li>Saving your own WhatsApp statuses shared by contacts in your WhatsApp circle.</li>
+        <li>Downloading files that you are entitled to download.</li>
+        <li>Using text tools (Stylish Text, Text Repeater) for personal messaging.</li>
+        <li>Managing files on your own device using the File Manager.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Prohibited -->
+    <div class="section-card" id="prohibited">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
+        </div>
+        <div><h2>Prohibited Activities <span class="section-num">05</span></h2></div>
+      </div>
+      <p>The following activities are strictly prohibited when using WebSync for WA:</p>
+      <ul class="check-list cross-list">
+        <li>Using the App to send spam, bulk messages, or unsolicited communications.</li>
+        <li>Using the App to harass, bully, threaten, or harm other individuals.</li>
+        <li>Downloading, sharing, or distributing content that violates copyright or intellectual property rights.</li>
+        <li>Saving or redistributing other people's WhatsApp statuses without their consent.</li>
+        <li>Using the App to violate any applicable local, national, or international law or regulation.</li>
+        <li>Attempting to reverse engineer, decompile, or modify the App.</li>
+        <li>Using the App for any automated, scripted, or bot-driven interactions with WhatsApp Web.</li>
+        <li>Using the App in any way that could damage, disable, or impair our servers or WhatsApp's services.</li>
+        <li>Impersonating any person or organization through the App.</li>
+        <li>Transmitting malware, viruses, or other harmful code via the App.</li>
+      </ul>
+    </div>
+
+    <!-- 6. WhatsApp Disclaimer -->
+    <div class="section-card" id="whatsapp">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192L8.533 15.79l-.394 4.701c.577 0 .832-.264 1.152-.578l2.768-2.692 5.753 4.242c1.061.585 1.824.28 2.088-.981l3.78-17.803c.388-1.564-.601-2.272-1.815-1.962z"/></svg>
+        </div>
+        <div><h2>WhatsApp Disclaimer <span class="section-num">06</span></h2></div>
+      </div>
+      <div class="highlight-box">
+        <strong>WebSync for WA is NOT affiliated with WhatsApp LLC or Meta Platforms, Inc.</strong>
+      </div>
+      <ul class="check-list">
+        <li>WebSync for WA is an <strong>independent utility application</strong> developed by Raza's Dev Studio.</li>
+        <li>The WhatsApp Web feature works by loading the official WhatsApp Web service (<code>web.whatsapp.com</code>) inside an in-app browser (WebView).</li>
+        <li><strong>WhatsApp®</strong>, the WhatsApp logo, and all related marks are registered trademarks of WhatsApp LLC, a Meta company. All rights belong to their respective owners.</li>
+        <li>We do not have any partnership, sponsorship, or authorization from WhatsApp LLC or Meta Platforms, Inc.</li>
+        <li>The availability of the WhatsApp Web feature depends entirely on WhatsApp's own services. If WhatsApp changes or restricts access to WhatsApp Web, this feature may stop working.</li>
+        <li><strong>You are solely responsible</strong> for complying with WhatsApp's Terms of Service while using the WhatsApp Web feature through our App.</li>
+      </ul>
+    </div>
+
+    <!-- 7. IP -->
+    <div class="section-card" id="ip">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+        </div>
+        <div><h2>Intellectual Property <span class="section-num">07</span></h2></div>
+      </div>
+      <p>All rights, title, and interest in and to WebSync for WA (excluding content loaded from WhatsApp Web) are owned by <strong>Raza's Dev Studio</strong>.</p>
+      <ul class="check-list">
+        <li>The app's code, design, icons, graphics, and branding are proprietary to Raza's Dev Studio.</li>
+        <li>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal purposes.</li>
+        <li>You may not copy, reproduce, distribute, or create derivative works based on the App without our prior written consent.</li>
+        <li>Open-source components used within the App are subject to their respective licenses.</li>
+      </ul>
+    </div>
+
+    <!-- 8. Third Party -->
+    <div class="section-card" id="third-party">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <div><h2>Third-Party Services <span class="section-num">08</span></h2></div>
+      </div>
+      <p>The App integrates with the following third-party services, each governed by their own Terms of Service:</p>
+      <div class="rule-card"><strong>WhatsApp Web</strong><span>Subject to WhatsApp's Terms of Service and Privacy Policy. You must comply with WhatsApp's terms independently.</span></div>
+      <div class="rule-card"><strong>Google AdMob</strong><span>Ad serving is subject to Google's Terms of Service and Advertising Policies.</span></div>
+      <div class="rule-card"><strong>Google Play Services</strong><span>The App is distributed through Google Play and subject to Google Play's Developer Distribution Agreement.</span></div>
+      <p style="margin-top:14px">We are not responsible for the content, policies, or practices of any third-party service. Links or integrations with external services do not imply our endorsement.</p>
+    </div>
+
+    <!-- 9. Liability -->
+    <div class="section-card" id="liability">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
+        </div>
+        <div><h2>Limitation of Liability <span class="section-num">09</span></h2></div>
+      </div>
+      <p>To the maximum extent permitted by applicable law, Raza's Dev Studio shall not be liable for:</p>
+      <ul class="check-list cross-list">
+        <li>Any indirect, incidental, special, consequential, or punitive damages.</li>
+        <li>Loss of data, revenue, profits, or business opportunities arising from use of the App.</li>
+        <li>Damage caused by your reliance on information obtained through the App.</li>
+        <li>Actions taken by WhatsApp LLC or Meta Platforms, Inc. that affect the App's functionality.</li>
+        <li>Unauthorized access to or alteration of your data or files.</li>
+        <li>Content or actions of third-party services integrated in the App.</li>
+      </ul>
+      <p style="margin-top:14px">In no event shall our total liability exceed the amount you paid to acquire the App in the twelve months preceding the claim (or, if the App is free, zero).</p>
+    </div>
+
+    <!-- 10. Warranties -->
+    <div class="section-card" id="warranties">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        </div>
+        <div><h2>Disclaimer of Warranties <span class="section-num">10</span></h2></div>
+      </div>
+      <div class="highlight-box">
+        WebSync for WA is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis, without warranties of any kind, either express or implied.
+      </div>
+      <p>We do not warrant that:</p>
+      <ul class="check-list cross-list">
+        <li>The App will operate without errors or interruptions.</li>
+        <li>The App will be compatible with all Android devices or OS versions.</li>
+        <li>The WhatsApp Web feature will always be available (it depends on WhatsApp's own infrastructure).</li>
+        <li>The App will meet your specific requirements or expectations.</li>
+      </ul>
+    </div>
+
+    <!-- 11. Availability -->
+    <div class="section-card" id="availability">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+        </div>
+        <div><h2>Service Availability <span class="section-num">11</span></h2></div>
+      </div>
+      <p>We strive to keep WebSync for WA available and functional, but:</p>
+      <ul class="check-list">
+        <li>We reserve the right to modify, suspend, or discontinue any feature at any time without prior notice.</li>
+        <li>Scheduled maintenance or unexpected downtime may temporarily affect the App's availability.</li>
+        <li>Features that depend on WhatsApp's services (e.g., WhatsApp Web) may stop working if WhatsApp changes its platform.</li>
+        <li>We are not liable for any unavailability of the App or its features.</li>
+      </ul>
+    </div>
+
+    <!-- 12. Updates -->
+    <div class="section-card" id="updates">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12z"/></svg>
+        </div>
+        <div><h2>Updates & Changes to Terms <span class="section-num">12</span></h2></div>
+      </div>
+      <p>We reserve the right to update these Terms of Service at any time. When we do:</p>
+      <ul class="check-list">
+        <li>The "Last Updated" date at the top of this page will be revised.</li>
+        <li>For material changes, we will notify users within the App.</li>
+        <li>Continued use of the App after changes are published constitutes acceptance of the new Terms.</li>
+      </ul>
+      <p style="margin-top:12px">We also reserve the right to update the App itself at any time. App updates may change features, add new capabilities, or remove existing ones. We strongly recommend keeping the App updated to the latest version.</p>
+    </div>
+
+    <!-- 13. Termination -->
+    <div class="section-card" id="termination">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </div>
+        <div><h2>Termination <span class="section-num">13</span></h2></div>
+      </div>
+      <p>These Terms remain in effect as long as you use the App. You may terminate at any time by uninstalling WebSync for WA from your device.</p>
+      <p>We may also terminate or restrict your access if we believe you have:</p>
+      <ul class="check-list cross-list">
+        <li>Violated any provision of these Terms.</li>
+        <li>Used the App in a way that is harmful to other users, third parties, or us.</li>
+        <li>Violated applicable laws or regulations.</li>
+      </ul>
+      <p style="margin-top:12px">Upon termination, all licenses granted by these Terms immediately expire. Provisions that by their nature should survive termination (such as Limitation of Liability and Disclaimer of Warranties) shall continue to apply.</p>
+    </div>
+
+    <!-- 14. Governing Law -->
+    <div class="section-card" id="governing-law">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V17h2v-4.82L12 14l11-6-11-5zm7.93 6L12 13 4.07 9 12 5l7.93 4zM21 17h-2c0 1.1-1.9 2-4 2s-4-.9-4-2h-2c0 2.21 2.69 4 6 4s6-1.79 6-4z"/></svg>
+        </div>
+        <div><h2>Governing Law <span class="section-num">14</span></h2></div>
+      </div>
+      <p>These Terms of Service shall be governed by and construed in accordance with the laws applicable to the developer's jurisdiction, without regard to conflict of law provisions.</p>
+      <p>Any disputes arising out of or in connection with these Terms shall first be attempted to be resolved through good-faith negotiation. If a resolution cannot be reached informally, disputes shall be submitted to the appropriate courts in the developer's jurisdiction.</p>
+      <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+    </div>
+
+    <!-- 15. Contact -->
+    <div class="section-card" id="contact-tos">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div><h2>Contact Us <span class="section-num">15</span></h2></div>
+      </div>
+      <p>If you have any questions about these Terms of Service, please contact us:</p>
+      <div class="contact-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" style="fill:var(--primary);flex-shrink:0"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <div>
+          <strong style="color:var(--text);display:block;margin-bottom:2px">Raza's Dev Studio</strong>
+          <a href="mailto:razasdevstudio@gmail.com">razasdevstudio@gmail.com</a>
+          <span style="color:var(--text-3);font-size:.82rem;display:block;margin-top:2px">We aim to respond within 48 hours.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <svg viewBox="0 0 24 24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192L8.533 15.79l-.394 4.701c.577 0 .832-.264 1.152-.578l2.768-2.692 5.753 4.242c1.061.585 1.824.28 2.088-.981l3.78-17.803c.388-1.564-.601-2.272-1.815-1.962z"/></svg>
+  </div>
+  <div class="footer-app">WebSync for WA</div>
+  <div>Version 1.0.0 &nbsp;·&nbsp; Last Updated: July 2025</div>
+  <div class="footer-links">
+    <a href="privacy_policy.html">Privacy Policy</a>
+    <a href="terms_of_service.html">Terms of Service</a>
+    <a href="mailto:razasdevstudio@gmail.com">Contact</a>
+  </div>
+  <div>© 2025 Raza's Dev Studio. All rights reserved.</div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="back-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+</button>
+
+<script>
+  const btn = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 300);
+  }, { passive: true });
+</script>
+</body>
+</html>
 
