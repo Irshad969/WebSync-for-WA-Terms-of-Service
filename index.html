@@ -1,698 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Terms of Service — WebSync for WA</title>
-<meta name="description" content="Terms of Service for WebSync for WA — Android app by Raza's Dev Studio." />
-<meta name="robots" content="index, follow" />
-<meta property="og:title" content="Terms of Service — WebSync for WA" />
-<meta property="og:description" content="Please read these Terms of Service carefully before using WebSync for WA." />
-<meta property="og:type" content="website" />
-<link rel="icon" href="icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Deenify</title>
+    <style>
+        :root {
+            --primary: #0B2A1D;
+            --primary-light: #154D33;
+            --accent: #DCEAE1;
+            --text-main: #1B1B18;
+            --text-muted: #585650;
+            --bg-main: #FAF8F3;
+            --card-bg: #FFFFFF;
+            --border-color: #E4E0D2;
+        }
 
-<style>
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  :root{
-    --bg:        #f7f8f7;
-    --surface:   #ffffff;
-    --line:      #e2e5e2;
-    --line-soft: #ececee;
-    --ink:       #171a17;
-    --ink-2:     #4c534d;
-    --ink-3:     #868d87;
-    --accent:    #0e6f68;
-    --accent-ink:#0a4d47;
-    --accent-bg: #e8f2f0;
-    --danger:    #a6432f;
-    --danger-bg: #f7e9e6;
-    --serif:     'Source Serif 4', Georgia, serif;
-    --sans:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --mono:      'IBM Plex Mono', ui-monospace, monospace;
-    --sidebar-w: 250px;
-  }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            padding-bottom: 60px;
+        }
 
-  body{
-    font-family:var(--sans);
-    background:var(--bg);
-    color:var(--ink-2);
-    line-height:1.65;
-    font-size:15.5px;
-    -webkit-font-smoothing:antialiased;
-  }
+        header {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-light);
+        }
 
-  a{color:var(--accent);}
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
 
-  /* ── Shell / grid ─────────────────────────── */
-  .shell{
-    display:grid;
-    grid-template-columns:var(--sidebar-w) 1fr;
-    max-width:1180px;
-    margin:0 auto;
-  }
+        header p {
+            color: var(--accent);
+            font-size: 1rem;
+        }
 
-  /* ── Sidebar ──────────────────────────────── */
-  .sidebar{
-    border-right:1px solid var(--line);
-    padding:28px 22px;
-    align-self:start;
-    position:sticky;
-    top:0;
-    height:100vh;
-    overflow-y:auto;
-  }
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:26px;
-  }
-  .brand img{
-    width:34px;height:34px;border-radius:9px;display:block;
-  }
-  .brand-name{
-    font-size:.86rem;
-    font-weight:600;
-    color:var(--ink);
-    letter-spacing:-.1px;
-    line-height:1.25;
-  }
-  .brand-sub{
-    font-size:.68rem;
-    color:var(--ink-3);
-    font-family:var(--mono);
-    text-transform:uppercase;
-    letter-spacing:.06em;
-  }
+        .container {
+            max-width: 860px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+        }
 
-  nav.toc{position:relative;}
-  nav.toc .rail{
-    position:absolute;
-    left:0; top:0;
-    width:2px; height:30px;
-    background:var(--accent);
-    border-radius:2px;
-    transition:transform .25s ease;
-  }
-  nav.toc ol{
-    list-style:none;
-    padding-left:14px;
-    border-left:1px solid var(--line-soft);
-  }
-  nav.toc li{margin-bottom:1px;}
-  nav.toc a{
-    display:block;
-    padding:6px 4px 6px 10px;
-    font-size:.82rem;
-    color:var(--ink-3);
-    text-decoration:none;
-    border-radius:4px;
-    transition:color .15s;
-  }
-  nav.toc a:hover{color:var(--ink);}
-  nav.toc a.active{color:var(--accent-ink);font-weight:600;}
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
 
-  .sidebar-foot{
-    margin-top:28px;
-    padding-top:16px;
-    border-top:1px solid var(--line-soft);
-    font-size:.72rem;
-    color:var(--ink-3);
-  }
-  .sidebar-foot div{margin-bottom:3px;}
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+        }
 
-  /* mobile nav select, hidden on desktop */
-  .mobile-nav{display:none;}
+        h3 {
+            color: var(--primary-light);
+            font-size: 1.1rem;
+            margin: 20px 0 10px;
+        }
 
-  /* ── Main column ──────────────────────────── */
-  main.doc{
-    padding:56px 56px 90px;
-    max-width:720px;
-  }
+        p {
+            margin-bottom: 14px;
+            color: var(--text-main);
+        }
 
-  .doc-header{
-    margin-bottom:44px;
-    padding-bottom:28px;
-    border-bottom:1px solid var(--line);
-  }
-  .eyebrow{
-    font-family:var(--mono);
-    font-size:.72rem;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    color:var(--accent-ink);
-    margin-bottom:10px;
-  }
-  .doc-header h1{
-    font-family:var(--serif);
-    font-size:2.5rem;
-    font-weight:700;
-    color:var(--ink);
-    letter-spacing:-.02em;
-    margin-bottom:12px;
-  }
-  .doc-header .dek{
-    font-size:1rem;
-    color:var(--ink-2);
-    max-width:56ch;
-    margin-bottom:20px;
-  }
-  .meta-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px 22px;
-    font-family:var(--mono);
-    font-size:.75rem;
-    color:var(--ink-3);
-  }
-  .meta-row b{color:var(--ink-2);font-weight:600;}
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
 
-  .commitment{
-    margin-top:24px;
-    padding:16px 18px;
-    background:var(--accent-bg);
-    border-radius:8px;
-    font-size:.9rem;
-    color:var(--accent-ink);
-  }
-  .commitment b{color:var(--ink);}
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
 
-  .warn-banner{
-    margin-top:18px;
-    padding:16px 18px;
-    background:var(--danger-bg);
-    border-radius:8px;
-    font-size:.88rem;
-    color:var(--danger);
-  }
-  .warn-banner b{color:var(--ink);}
+        .badge {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
 
-  /* ── Sections ─────────────────────────────── */
-  section.sec{
-    padding-top:46px;
-    margin-top:0;
-    scroll-margin-top:24px;
-    border-top:1px solid var(--line);
-  }
-  section.sec:first-of-type{border-top:none;}
-  .sec-head{
-    display:flex;
-    align-items:baseline;
-    gap:10px;
-    margin-bottom:16px;
-  }
-  .sec-head .idx{
-    font-family:var(--mono);
-    font-size:.75rem;
-    color:var(--ink-3);
-  }
-  .sec-head h2{
-    font-family:var(--serif);
-    font-size:1.35rem;
-    font-weight:600;
-    color:var(--ink);
-    letter-spacing:-.01em;
-  }
+        .highlight-box {
+            background-color: #F1EEE5;
+            border-left: 4px solid var(--primary-light);
+            padding: 16px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
 
-  p{color:var(--ink-2);margin-bottom:12px;font-size:.94rem;}
-  p:last-child{margin-bottom:0;}
-  .sec p + p{margin-top:12px;}
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
 
-  .list{list-style:none;margin-top:10px;}
-  .list li{
-    position:relative;
-    padding-left:20px;
-    margin-bottom:9px;
-    font-size:.92rem;
-    color:var(--ink-2);
-  }
-  .list li::before{
-    content:'—';
-    position:absolute;left:0;top:0;
-    color:var(--accent);
-    font-weight:600;
-  }
-  .list.cross li::before{content:'—';color:var(--danger);}
-  .list li b{color:var(--ink);font-weight:600;}
+        a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-  .field-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:14px 24px;
-    margin-top:18px;
-  }
-  .field{
-    padding-bottom:10px;
-    border-bottom:1px solid var(--line-soft);
-  }
-  .field-label{
-    font-family:var(--mono);
-    font-size:.68rem;
-    text-transform:uppercase;
-    letter-spacing:.06em;
-    color:var(--ink-3);
-    margin-bottom:3px;
-  }
-  .field-value{font-size:.92rem;color:var(--ink);font-weight:500;}
+        a:hover {
+            text-decoration: underline;
+        }
 
-  /* feature rows — definition-list style (reused for Description of Service) */
-  .perm{
-    display:grid;
-    grid-template-columns:132px 1fr;
-    gap:16px;
-    padding:14px 0;
-    border-bottom:1px solid var(--line-soft);
-    align-items:baseline;
-  }
-  .perm:first-of-type{border-top:1px solid var(--line-soft);margin-top:18px;}
-  .perm-name{
-    font-family:var(--mono);
-    font-size:.72rem;
-    text-transform:uppercase;
-    letter-spacing:.05em;
-    color:var(--accent-ink);
-  }
-  .perm-body strong{display:block;font-size:.92rem;color:var(--ink);margin-bottom:2px;}
-  .perm-body span{font-size:.88rem;color:var(--ink-2);}
-
-  .note{
-    border-left:2px solid var(--accent);
-    padding:12px 16px;
-    margin:18px 0;
-    font-size:.88rem;
-    color:var(--ink-2);
-    background:var(--surface);
-  }
-
-  .service-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:1px;
-    background:var(--line-soft);
-    border:1px solid var(--line-soft);
-    margin-top:16px;
-    border-radius:8px;
-    overflow:hidden;
-  }
-  .service{
-    background:var(--surface);
-    padding:14px 16px;
-  }
-  .service-name{font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:3px;}
-  .service-desc{font-size:.82rem;color:var(--ink-2);}
-
-  .contact-block{
-    margin-top:16px;
-    display:flex;
-    gap:14px;
-    align-items:center;
-    padding:18px;
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:10px;
-  }
-  .contact-block img{width:36px;height:36px;border-radius:9px;flex-shrink:0;}
-  .contact-block strong{display:block;color:var(--ink);font-size:.92rem;margin-bottom:2px;}
-  .contact-block a{font-weight:600;font-size:.92rem;}
-  .contact-block .resp{font-size:.78rem;color:var(--ink-3);margin-top:2px;}
-
-  /* ── Footer ───────────────────────────────── */
-  footer{
-    margin-top:60px;
-    padding-top:26px;
-    border-top:1px solid var(--line);
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:var(--ink-3);
-    font-size:.78rem;
-  }
-  footer img{width:26px;height:26px;border-radius:7px;}
-  footer .f-name{color:var(--ink-2);font-weight:600;font-size:.82rem;}
-
-  /* ── Responsive ───────────────────────────── */
-  @media (max-width:900px){
-    .shell{grid-template-columns:1fr;}
-    .sidebar{display:none;}
-    .mobile-nav{
-      display:block;
-      position:sticky;
-      top:0;
-      z-index:20;
-      background:var(--surface);
-      border-bottom:1px solid var(--line);
-      padding:12px 20px;
-    }
-    .mobile-nav-inner{
-      display:flex;align-items:center;gap:10px;
-      max-width:720px;margin:0 auto;
-    }
-    .mobile-nav img{width:26px;height:26px;border-radius:7px;}
-    .mobile-nav select{
-      flex:1;
-      font-family:var(--sans);
-      font-size:.82rem;
-      padding:7px 10px;
-      border-radius:7px;
-      border:1px solid var(--line);
-      background:var(--bg);
-      color:var(--ink-2);
-    }
-    main.doc{padding:34px 20px 70px;max-width:100%;}
-    .doc-header h1{font-size:1.9rem;}
-    .field-grid{grid-template-columns:1fr;}
-    .service-grid{grid-template-columns:1fr;}
-    .perm{grid-template-columns:1fr;gap:4px;}
-  }
-</style>
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<div class="mobile-nav">
-  <div class="mobile-nav-inner">
-    <img src="icon.png" alt="WebSync for WA" />
-    <select onchange="if(this.value) window.location.hash=this.value;">
-      <option value="">Jump to section…</option>
-      <option value="acceptance">1. Acceptance of Terms</option>
-      <option value="description">2. Description of Service</option>
-      <option value="responsibilities">3. User Responsibilities</option>
-      <option value="acceptable-use">4. Acceptable Use</option>
-      <option value="prohibited">5. Prohibited Activities</option>
-      <option value="whatsapp">6. WhatsApp Disclaimer</option>
-      <option value="ip">7. Intellectual Property</option>
-      <option value="third-party">8. Third-Party Services</option>
-      <option value="liability">9. Limitation of Liability</option>
-      <option value="warranties">10. Disclaimer of Warranties</option>
-      <option value="availability">11. Service Availability</option>
-      <option value="updates">12. Updates &amp; Changes</option>
-      <option value="termination">13. Termination</option>
-      <option value="governing-law">14. Governing Law</option>
-      <option value="contact-tos">15. Contact Us</option>
-    </select>
-  </div>
-</div>
+    <header>
+        <h1>Deenify — Privacy Policy</h1>
+        <p>Your Privacy is Sacred to Us • Effective Date: September 13, 2026</p>
+    </header>
 
-<div class="shell">
-
-  <aside class="sidebar">
-    <div class="brand">
-      <img src="icon.png" alt="WebSync for WA" />
-      <div>
-        <div class="brand-name">WebSync for WA</div>
-        <div class="brand-sub">Terms of Service</div>
-      </div>
-    </div>
-    <nav class="toc" id="toc">
-      <span class="rail"></span>
-      <ol>
-        <li><a href="#acceptance" data-target="acceptance">Acceptance of Terms</a></li>
-        <li><a href="#description" data-target="description">Description of Service</a></li>
-        <li><a href="#responsibilities" data-target="responsibilities">User Responsibilities</a></li>
-        <li><a href="#acceptable-use" data-target="acceptable-use">Acceptable Use</a></li>
-        <li><a href="#prohibited" data-target="prohibited">Prohibited Activities</a></li>
-        <li><a href="#whatsapp" data-target="whatsapp">WhatsApp Disclaimer</a></li>
-        <li><a href="#ip" data-target="ip">Intellectual Property</a></li>
-        <li><a href="#third-party" data-target="third-party">Third-Party Services</a></li>
-        <li><a href="#liability" data-target="liability">Limitation of Liability</a></li>
-        <li><a href="#warranties" data-target="warranties">Disclaimer of Warranties</a></li>
-        <li><a href="#availability" data-target="availability">Service Availability</a></li>
-        <li><a href="#updates" data-target="updates">Updates &amp; Changes</a></li>
-        <li><a href="#termination" data-target="termination">Termination</a></li>
-        <li><a href="#governing-law" data-target="governing-law">Governing Law</a></li>
-        <li><a href="#contact-tos" data-target="contact-tos">Contact Us</a></li>
-      </ol>
-    </nav>
-    <div class="sidebar-foot">
-      <div>Version 1.0.0</div>
-      <div>Updated July 2025</div>
-    </div>
-  </aside>
-
-  <main class="doc">
-
-    <div class="doc-header">
-      <div class="eyebrow">Legal · Android application</div>
-      <h1>Terms of Service</h1>
-      <p class="dek">Please read these Terms carefully before using WebSync for WA. By using the app, you agree to these Terms — written in plain language, section by section.</p>
-      <div class="meta-row">
-        <span><b>Last updated:</b> July 2025</span>
-        <span><b>Applies to:</b> Android</span>
-        <span><b>Developer:</b> Raza's Dev Studio</span>
-      </div>
-      <div class="warn-banner">
-        <b>Important disclaimer —</b> WebSync for WA is an independent, unofficial utility app. It is <b>not affiliated with, endorsed by, sponsored by, or associated with WhatsApp LLC or Meta Platforms, Inc.</b> in any way. WhatsApp® and related marks are trademarks of their respective owners.
-      </div>
-    </div>
-
-    <section class="sec" id="acceptance">
-      <div class="sec-head"><span class="idx">01</span><h2>Acceptance of Terms</h2></div>
-      <p>By downloading, installing, or using <b>WebSync for WA</b> ("the App"), you agree to be bound by these Terms of Service ("Terms"). These Terms form a legally binding agreement between you and <b>Raza's Dev Studio</b> ("we", "us", "our").</p>
-      <p>If you are using the App on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
-      <div class="note">If you do not agree to any part of these Terms, you must immediately stop using the application and uninstall it from your device.</div>
-    </section>
-
-    <section class="sec" id="description">
-      <div class="sec-head"><span class="idx">02</span><h2>Description of Service</h2></div>
-      <p>WebSync for WA is a multi-feature Android productivity application that provides the following tools:</p>
-
-      <div class="perm">
-        <span class="perm-name">WhatsApp Web</span>
-        <div class="perm-body"><strong>Full browser experience</strong><span>A full WhatsApp Web experience inside a native app shell.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">Direct chat</span>
-        <div class="perm-body"><strong>Chat without saving</strong><span>Start a WhatsApp chat without saving a contact first.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">QR scanner</span>
-        <div class="perm-body"><strong>Camera scanning</strong><span>Scan any QR code using your device camera.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">QR generator</span>
-        <div class="perm-body"><strong>Create QR codes</strong><span>Generate QR codes from text or URLs.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">Stylish text</span>
-        <div class="perm-body"><strong>Font styling</strong><span>Convert text into stylish Unicode fonts.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">Text repeater</span>
-        <div class="perm-body"><strong>Repeat automatically</strong><span>Repeat a block of text multiple times automatically.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">Status saver</span>
-        <div class="perm-body"><strong>View &amp; save</strong><span>View and save WhatsApp statuses locally on your device.</span></div>
-      </div>
-      <div class="perm">
-        <span class="perm-name">File manager</span>
-        <div class="perm-body"><strong>Browse &amp; manage</strong><span>Browse and manage files stored on your device.</span></div>
-      </div>
-
-      <p style="margin-top:16px">The App is provided as a utility tool. We do not guarantee continuous, uninterrupted access to any feature, particularly features that depend on WhatsApp Web's availability.</p>
-    </section>
-
-    <section class="sec" id="responsibilities">
-      <div class="sec-head"><span class="idx">03</span><h2>User Responsibilities</h2></div>
-      <p>By using WebSync for WA, you agree to:</p>
-      <ul class="list">
-        <li>Use the App only for lawful purposes and in accordance with these Terms.</li>
-        <li>Comply with <b>WhatsApp's Terms of Service</b> when using the WhatsApp Web feature. You are solely responsible for your compliance with WhatsApp's policies.</li>
-        <li>Be solely responsible for all content you generate, send, download, share, or save through the application.</li>
-        <li>Maintain the security of your WhatsApp account and not share your session with unauthorized parties.</li>
-        <li>Keep the App updated to the latest version to ensure you receive security fixes and improvements.</li>
-        <li>Use the Status Saver and File Manager features responsibly and only for files you have the right to access.</li>
-        <li>Be at least 13 years of age, or the minimum age required in your jurisdiction to use such services.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="acceptable-use">
-      <div class="sec-head"><span class="idx">04</span><h2>Acceptable Use</h2></div>
-      <p>WebSync for WA is designed for personal, non-commercial use. The following uses are explicitly permitted:</p>
-      <ul class="list">
-        <li>Using WhatsApp Web to communicate with your own contacts.</li>
-        <li>Scanning QR codes for personal informational purposes.</li>
-        <li>Saving your own WhatsApp statuses shared by contacts in your WhatsApp circle.</li>
-        <li>Downloading files that you are entitled to download.</li>
-        <li>Using text tools (Stylish Text, Text Repeater) for personal messaging.</li>
-        <li>Managing files on your own device using the File Manager.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="prohibited">
-      <div class="sec-head"><span class="idx">05</span><h2>Prohibited Activities</h2></div>
-      <p>The following activities are strictly prohibited when using WebSync for WA:</p>
-      <ul class="list cross">
-        <li>Using the App to send spam, bulk messages, or unsolicited communications.</li>
-        <li>Using the App to harass, bully, threaten, or harm other individuals.</li>
-        <li>Downloading, sharing, or distributing content that violates copyright or intellectual property rights.</li>
-        <li>Saving or redistributing other people's WhatsApp statuses without their consent.</li>
-        <li>Using the App to violate any applicable local, national, or international law or regulation.</li>
-        <li>Attempting to reverse engineer, decompile, or modify the App.</li>
-        <li>Using the App for any automated, scripted, or bot-driven interactions with WhatsApp Web.</li>
-        <li>Using the App in any way that could damage, disable, or impair our servers or WhatsApp's services.</li>
-        <li>Impersonating any person or organization through the App.</li>
-        <li>Transmitting malware, viruses, or other harmful code via the App.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="whatsapp">
-      <div class="sec-head"><span class="idx">06</span><h2>WhatsApp Disclaimer</h2></div>
-      <div class="warn-banner"><b>WebSync for WA is NOT affiliated with WhatsApp LLC or Meta Platforms, Inc.</b></div>
-      <ul class="list">
-        <li>WebSync for WA is an <b>independent utility application</b> developed by Raza's Dev Studio.</li>
-        <li>The WhatsApp Web feature works by loading the official WhatsApp Web service (<code>web.whatsapp.com</code>) inside an in-app browser (WebView).</li>
-        <li><b>WhatsApp®</b>, the WhatsApp logo, and all related marks are registered trademarks of WhatsApp LLC, a Meta company. All rights belong to their respective owners.</li>
-        <li>We do not have any partnership, sponsorship, or authorization from WhatsApp LLC or Meta Platforms, Inc.</li>
-        <li>The availability of the WhatsApp Web feature depends entirely on WhatsApp's own services. If WhatsApp changes or restricts access to WhatsApp Web, this feature may stop working.</li>
-        <li><b>You are solely responsible</b> for complying with WhatsApp's Terms of Service while using the WhatsApp Web feature through our App.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="ip">
-      <div class="sec-head"><span class="idx">07</span><h2>Intellectual Property</h2></div>
-      <p>All rights, title, and interest in and to WebSync for WA (excluding content loaded from WhatsApp Web) are owned by <b>Raza's Dev Studio</b>.</p>
-      <ul class="list">
-        <li>The app's code, design, icons, graphics, and branding are proprietary to Raza's Dev Studio.</li>
-        <li>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal purposes.</li>
-        <li>You may not copy, reproduce, distribute, or create derivative works based on the App without our prior written consent.</li>
-        <li>Open-source components used within the App are subject to their respective licenses.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="third-party">
-      <div class="sec-head"><span class="idx">08</span><h2>Third-Party Services</h2></div>
-      <p>The App integrates with the following third-party services, each governed by their own Terms of Service:</p>
-      <div class="service-grid">
-        <div class="service"><div class="service-name">WhatsApp Web</div><div class="service-desc">Subject to WhatsApp's Terms of Service and Privacy Policy.</div></div>
-        <div class="service"><div class="service-name">Google AdMob</div><div class="service-desc">Ad serving subject to Google's Terms of Service and Advertising Policies.</div></div>
-        <div class="service"><div class="service-name">Google Play Services</div><div class="service-desc">Distributed via Google Play, subject to the Developer Distribution Agreement.</div></div>
-      </div>
-      <p style="margin-top:16px">We are not responsible for the content, policies, or practices of any third-party service. Links or integrations with external services do not imply our endorsement.</p>
-    </section>
-
-    <section class="sec" id="liability">
-      <div class="sec-head"><span class="idx">09</span><h2>Limitation of Liability</h2></div>
-      <p>To the maximum extent permitted by applicable law, Raza's Dev Studio shall not be liable for:</p>
-      <ul class="list cross">
-        <li>Any indirect, incidental, special, consequential, or punitive damages.</li>
-        <li>Loss of data, revenue, profits, or business opportunities arising from use of the App.</li>
-        <li>Damage caused by your reliance on information obtained through the App.</li>
-        <li>Actions taken by WhatsApp LLC or Meta Platforms, Inc. that affect the App's functionality.</li>
-        <li>Unauthorized access to or alteration of your data or files.</li>
-        <li>Content or actions of third-party services integrated in the App.</li>
-      </ul>
-      <p style="margin-top:14px">In no event shall our total liability exceed the amount you paid to acquire the App in the twelve months preceding the claim (or, if the App is free, zero).</p>
-    </section>
-
-    <section class="sec" id="warranties">
-      <div class="sec-head"><span class="idx">10</span><h2>Disclaimer of Warranties</h2></div>
-      <div class="commitment">WebSync for WA is provided on an <b>"AS IS"</b> and <b>"AS AVAILABLE"</b> basis, without warranties of any kind, either express or implied.</div>
-      <p style="margin-top:14px">We do not warrant that:</p>
-      <ul class="list cross">
-        <li>The App will operate without errors or interruptions.</li>
-        <li>The App will be compatible with all Android devices or OS versions.</li>
-        <li>The WhatsApp Web feature will always be available (it depends on WhatsApp's own infrastructure).</li>
-        <li>The App will meet your specific requirements or expectations.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="availability">
-      <div class="sec-head"><span class="idx">11</span><h2>Service Availability</h2></div>
-      <p>We strive to keep WebSync for WA available and functional, but:</p>
-      <ul class="list">
-        <li>We reserve the right to modify, suspend, or discontinue any feature at any time without prior notice.</li>
-        <li>Scheduled maintenance or unexpected downtime may temporarily affect the App's availability.</li>
-        <li>Features that depend on WhatsApp's services (e.g., WhatsApp Web) may stop working if WhatsApp changes its platform.</li>
-        <li>We are not liable for any unavailability of the App or its features.</li>
-      </ul>
-    </section>
-
-    <section class="sec" id="updates">
-      <div class="sec-head"><span class="idx">12</span><h2>Updates &amp; Changes to Terms</h2></div>
-      <p>We reserve the right to update these Terms of Service at any time. When we do:</p>
-      <ul class="list">
-        <li>The "Last Updated" date at the top of this page will be revised.</li>
-        <li>For material changes, we will notify users within the App.</li>
-        <li>Continued use of the App after changes are published constitutes acceptance of the new Terms.</li>
-      </ul>
-      <p style="margin-top:12px">We also reserve the right to update the App itself at any time. App updates may change features, add new capabilities, or remove existing ones. We strongly recommend keeping the App updated to the latest version.</p>
-    </section>
-
-    <section class="sec" id="termination">
-      <div class="sec-head"><span class="idx">13</span><h2>Termination</h2></div>
-      <p>These Terms remain in effect as long as you use the App. You may terminate at any time by uninstalling WebSync for WA from your device.</p>
-      <p>We may also terminate or restrict your access if we believe you have:</p>
-      <ul class="list cross">
-        <li>Violated any provision of these Terms.</li>
-        <li>Used the App in a way that is harmful to other users, third parties, or us.</li>
-        <li>Violated applicable laws or regulations.</li>
-      </ul>
-      <p style="margin-top:12px">Upon termination, all licenses granted by these Terms immediately expire. Provisions that by their nature should survive termination (such as Limitation of Liability and Disclaimer of Warranties) shall continue to apply.</p>
-    </section>
-
-    <section class="sec" id="governing-law">
-      <div class="sec-head"><span class="idx">14</span><h2>Governing Law</h2></div>
-      <p>These Terms of Service shall be governed by and construed in accordance with the laws applicable to the developer's jurisdiction, without regard to conflict of law provisions.</p>
-      <p>Any disputes arising out of or in connection with these Terms shall first be attempted to be resolved through good-faith negotiation. If a resolution cannot be reached informally, disputes shall be submitted to the appropriate courts in the developer's jurisdiction.</p>
-      <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
-    </section>
-
-    <section class="sec" id="contact-tos">
-      <div class="sec-head"><span class="idx">15</span><h2>Contact Us</h2></div>
-      <p>If you have any questions about these Terms of Service, please contact us:</p>
-      <div class="contact-block">
-        <img src="icon.png" alt="Raza's Dev Studio" />
-        <div>
-          <strong>Raza's Dev Studio</strong>
-          <a href="mailto:razasdevstudio@gmail.com">razasdevstudio@gmail.com</a>
-          <div class="resp">We aim to respond within 48 hours.</div>
+    <div class="container">
+        
+        <div class="card">
+            <span class="badge">Privacy First Architecture</span>
+            <h2>1. Overview</h2>
+            <p>Welcome to <strong>Deenify</strong> ("we", "our", or "us"), developed by <strong>RazasDevStudio</strong> (Package ID: <code>com.razasdevstudio.deenify</code>). Deenify is an offline-first Islamic companion application providing authentic Quran PDFs, Dua & Azkar datasets, Khatme Qadriya, Tasbeeh/Dhikr counter, Zakat Calculator, and Sadaqah tracker.</p>
+            <p>We are deeply committed to respecting your privacy. <strong>Deenify does NOT collect, transmit, store, sell, or share any personal user data.</strong> All your reading progress, bookmarks, Dhikr counts, and settings remain 100% stored on your local device.</p>
         </div>
-      </div>
-    </section>
 
-    <footer>
-      <img src="icon.png" alt="WebSync for WA" />
-      <div>
-        <div class="f-name">WebSync for WA</div>
-        <div>Version 1.0.0 · Updated July 2025 · © 2025 Raza's Dev Studio</div>
-      </div>
-    </footer>
+        <div class="card">
+            <h2>2. Information Collection and Use</h2>
+            <p>Deenify is designed to function locally on your device without requiring user account creation, logins, phone numbers, or email addresses.</p>
 
-  </main>
-</div>
+            <h3>A. Personal Data</h3>
+            <p>We do <strong>NOT</strong> collect any Personally Identifiable Information (PII) such as your name, email address, phone number, location, or device identifiers.</p>
 
-<script>
-  const links = Array.from(document.querySelectorAll('nav.toc a'));
-  const sections = links.map(l => document.getElementById(l.dataset.target));
-  const rail = document.querySelector('nav.toc .rail');
+            <h3>B. Offline Local Data Storage</h3>
+            <p>The following information is stored purely on your local device storage (via standard Android device preferences):</p>
+            <ul>
+                <li><strong>Quran Reading State:</strong> Saved edition preference, page numbers, and reading bookmarks.</li>
+                <li><strong>Dhikr Progress:</strong> Custom phrases, current count, and target goals.</li>
+                <li><strong>User Preferences:</strong> Theme preference (Light/Dark mode) and local notification reminder times.</li>
+            </ul>
 
-  function setActive(link){
-    links.forEach(l => l.classList.remove('active'));
-    if(!link) return;
-    link.classList.add('active');
-    if(rail){
-      rail.style.transform = `translateY(${link.offsetTop}px)`;
-      rail.style.height = link.offsetHeight + 'px';
-    }
-  }
+            <div class="highlight-box">
+                <p><strong>Note:</strong> Local data stored on your device never leaves your phone and is automatically erased when you uninstall the app or clear app data via device settings.</p>
+            </div>
+        </div>
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        const link = links.find(l => l.dataset.target === entry.target.id);
-        if(link) setActive(link);
-      }
-    });
-  }, { rootMargin: '-10% 0px -70% 0px', threshold: 0 });
+        <div class="card">
+            <h2>3. Asset Delivery & Internet Usage</h2>
+            <p>Deenify utilizes <strong>Google Play Asset Delivery (PAD)</strong> to download authentic Quran edition PDFs on-demand directly from the Google Play Store servers. This ensures the base installation size remains small.</p>
+            <ul>
+                <li>On-demand downloads are managed strictly by Google Play Core services.</li>
+                <li>No custom remote servers, tracking domains, or third-party analytical servers are contacted by Deenify.</li>
+                <li>Once downloaded, Quran PDFs are saved to your app's private local storage and remain 100% readable offline.</li>
+            </ul>
+        </div>
 
-  sections.forEach(s => { if(s) observer.observe(s); });
-  if(links[0]) setActive(links[0]);
-</script>
+        <div class="card">
+            <h2>4. Device Permissions Requested</h2>
+            <p>Deenify requests only the minimal system permissions required for local user-requested features:</p>
+            <ul>
+                <li><strong>POST_NOTIFICATIONS (Android 13+):</strong> Used strictly to post local daily reminder notifications configured by you inside the app. No remote push notifications or ad alerts are sent.</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Used solely to re-schedule your local daily reminders on your device after your phone reboots.</li>
+            </ul>
+            <p>Deenify does <strong>NOT</strong> request or access location permissions, contacts, microphone, camera, or external storage files.</p>
+        </div>
+
+        <div class="card">
+            <h2>5. Third-Party Services & Analytics</h2>
+            <p>Deenify contains <strong>NO third-party advertisements, NO tracking SDKs, NO analytics tools, and NO social media integration.</strong></p>
+            <p>We do not use services such as Google Analytics, Firebase Analytics, Facebook SDK, or any advertising networks.</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Children's Privacy</h2>
+            <p>Our app does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. Deenify is safe for users of all ages as it contains zero data collection, zero ads, and zero inappropriate content.</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Security</h2>
+            <p>We value your trust in using Deenify. Since we do not transmit any personal data over the internet or host user data on external servers, your data is inherently protected by your Android device's native app isolation sandbox.</p>
+        </div>
+
+        <div class="card">
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. Any modifications will be posted here with an updated effective date.</p>
+        </div>
+
+        <div class="card">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions or suggestions about our Privacy Policy or Deenify, do not hesitate to contact us at:</p>
+            <p><strong>Developer Studio:</strong> RazasDevStudio</p>
+            <p><strong>Application:</strong> Deenify (com.razasdevstudio.deenify)</p>
+            <p><strong>Email Support:</strong> <a href="mailto:irshadkhan20045@gmail.com">irshadkhan20045@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>© 2026 RazasDevStudio. All rights reserved. Deenify — Daily Deen Companion.</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
